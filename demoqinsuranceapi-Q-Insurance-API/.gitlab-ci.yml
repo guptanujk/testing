@@ -1,0 +1,9 @@
+stages:
+  - test
+
+test_runner:
+  stage: test
+  script:
+    - echo "Runner is working!"
+  tags:
+    - Q-insurance   # Make sure this matches your runner's tag

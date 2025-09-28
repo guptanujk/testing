@@ -1,0 +1,9 @@
+node_modules/
+.idea/*
+*.log
+migration/
+dist/
+dist1/
+coverage/*
+logs/
+package-lock.json

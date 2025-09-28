@@ -1,0 +1,50 @@
+swagger: "2.0"
+info:
+  description: "This is an API documentation of ACCELQ DEMO APP 3.0"
+  version: "3.0"
+  title: "ACCELQ"
+basePath: "/"
+tags:
+- name: "users"
+  description: "about users"
+schemes:
+- "http"
+paths:
+  /user/health-check:
+    get:
+      tags:
+      - "user"
+      summary: "Health check API"
+      description: "This API will help us check status of the server"
+      operationId: "heathcheck"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Server is not up"
+        500:
+          description: "Server is not up"
+securityDefinitions:
+  JWT:
+    type: "apiKey"
+    description: "JWT authorization of an API"
+    name: "token"
+    in: "header"
+security: [ { JWT: [] } ]
+definitions:
+  sampleModel:
+    type: "object"
+    properties:
+      id:
+        type: "number"
+      first_name:
+        type: "string"
+      last_name:
+        type: "string"
+      email:
+        type: "string"
+      is_active:
+        type: "number"

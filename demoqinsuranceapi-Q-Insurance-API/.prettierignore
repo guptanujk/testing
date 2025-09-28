@@ -1,0 +1,6 @@
+/node_modules/**
+/dist/**
+/src/node_modules/**
+/coverage/**
+/src/assets/mixins/_borders.scss
+/tests/unit/coverage/**
