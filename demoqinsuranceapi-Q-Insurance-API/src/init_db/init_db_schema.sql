@@ -29,7 +29,7 @@
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE IF NOT EXISTS `claims` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `userPolicyId` bigint DEFAULT NULL,
+  `policyid` bigint DEFAULT NULL,
   `status` enum('Approve','Reject','Closed','Claim Issued') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `amount` BIGINT(19) NOT NULL DEFAULT '1',
   `isActive` tinyint NOT NULL DEFAULT '1',
